@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        saldo = 2200.00;
+    </script>
+    <script type="text/javascript" src="script/scripts_banco.js"></script>
+</head>
+
+<body>
+    <h1> </h1>
+    Seja bem vindo ao menu de opções! <br /> <br />
+    1 - Consultar saldo <br />
+    2 - Receber valor <br />
+    3 - Transferir valor <br />
+    <input type="number" id="menu" onkeypress="return ApenasNumeros(event,this);" placeholder="apenas numeros"/>
+    <input type="button" id="buttonMenu" value="opção"
+        onclick='checarOpcaoMenu(document.getElementById("menu").value)' /> <br /><br />
+    <label for="deposito">Digite o valor que deseja depositar:</label><br />
+    <input type="number" id="deposito" /><br /><br />
+    <label for="transferir">Digite o valor que deseja transferir:</label><br />
+    <input type="number" id="transferir" />
+
+</body>
+
+</html>
